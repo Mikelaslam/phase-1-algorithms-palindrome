@@ -1,12 +1,32 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+
+function tracedbackString(char) {
+  {
+  const charArray = char.split("");
+  // Here we are reversing the array
+  const tracedbackcharArray = charArray.reverse();
+  const tracedbackchar = tracedbackcharArray.join("");
+  return tracedbackchar;
+  
 }
+}
+function isPalindrome(char) {
+  const tracedbackchar = tracedbackString(char);
 
-/* 
-  Add your pseudocode here
-*/
+  if (char === tracedbackchar) {
+    return true;
 
-/*
+  } else {
+    return false;
+  }
+}
+  // Write your algorithm here
+
+
+ /* 
+   Add your pseudocode here
+ */
+
+ /*
   Add written explanation of your solution here
 */
 
